@@ -10,7 +10,7 @@
       <h1 class="main">Notes</h1>
       <table class="table" border="black">
         <thead>
-          <tr>
+          <tr class="active">
               <th>ID</th>
               <th>Title</th>
               <th>Description</th>
@@ -36,7 +36,7 @@
 
 
 <script>
-import Api from '../../vue-client/src/Api'
+import Api from '../../daisyui-vue-client/src/Api'
 
 export default {
     name: 'app',
