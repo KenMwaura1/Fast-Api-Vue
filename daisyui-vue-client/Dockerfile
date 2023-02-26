@@ -18,7 +18,7 @@ RUN set -eux \
 	postgresql-dev \
 	&& npm install --upgrade npm \
 	# && npm install -g yarn\
-	&& yarn add -r /usr/src/app/package.json \
+	&& yarn \
 	&& rm -rf /root/.cache/pip
 
 # copy project
