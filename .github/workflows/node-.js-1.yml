@@ -25,8 +25,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        # cache: 'npm'
     - run: cd daisyui-vue-client
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    - run: |
+        cd daisyui-vue-client
+        yarn 
+    - run: |
+        cd daisyui-vue-client
+        yarn build --if-present
+    
