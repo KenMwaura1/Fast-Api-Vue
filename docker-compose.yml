@@ -12,6 +12,19 @@ services:
       - 8002:8000
     environment:
       - DATABASE_URL=postgresql://hello_fastapi:hello_fastapi@db/hello_fastapi_dev
+    
+    depends_on:
+      - db
+
+  frontend:
+    build: ./daisyui-vue-client
+    command: yarn dev
+    volumes:
+      - ./daisyui-vue-client:/usr/src/app/
+    ports:
+      - 3000:3000
+    depends_on:
+      - web
   db:
     image: postgres:13.1-alpine
     volumes:
