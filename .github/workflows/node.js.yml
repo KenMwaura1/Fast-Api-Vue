@@ -28,11 +28,11 @@ jobs:
         # cache: 'npm'
     - name: Install dependencies
       run: |
-        cd vue-client
+        cd daisyui-vue-client
         yarn install
     - name: Build
       run: |
-        cd vue-client
+        cd daisyui-vue-client
         yarn build 
    # - name: Lint
       # run: |

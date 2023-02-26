@@ -1,4 +1,4 @@
-# FastAPI example app
+# FastAPI Vue Starter App
 
 ![fastapi-0.92.0-informational](https://img.shields.io/badge/fastapi-0.92.0-informational) [![CodeQL](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/codeql.yml/badge.svg)](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/codeql.yml)
 [![Docker Compose Actions Workflow](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/docker-image.yml/badge.svg)](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/docker-image.yml)
@@ -11,7 +11,6 @@ This repository contains code for asynchronous example api using the [Fast Api f
 
 ## Accompanying Article
 
-Read the full tutorial [here](https://dev.to/ken_mwaura1/getting-started-with-fast-api-and-docker-515)
 
 ## Installation method 1 (Run application locally)
 
@@ -65,7 +64,7 @@ Read the full tutorial [here](https://dev.to/ken_mwaura1/getting-started-with-fa
 9. Check the app on [notes](http://localhost:8002/notes)
 Open your browser and navigate to [docs](http://localhost:8002/docs) to view the swagger documentation for the api.
 
-## Vue Frontend (Optional)
+## Vue Frontend 
 
 The is a simple Vue frontend using [vite](https://vitejs.dev/guide/) that was added. However it is an optional step in running the application.
 
