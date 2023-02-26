@@ -17,7 +17,7 @@ RUN set -eux \
 	libressl-dev libffi-dev gcc musl-dev python3-dev \
 	postgresql-dev \
 	&& npm install --upgrade npm \
-	&& npm install -g yarn\
+	# && npm install -g yarn\
 	&& yarn add -r /usr/src/app/package.json \
 	&& rm -rf /root/.cache/pip
 
