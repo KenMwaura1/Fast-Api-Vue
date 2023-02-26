@@ -32,5 +32,5 @@ jobs:
         yarn 
     - run: |
         cd daisyui-vue-client
-        yarn build --if-present
+        yarn build
     
