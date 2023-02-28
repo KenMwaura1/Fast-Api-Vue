@@ -1,4 +1,4 @@
-name: Docker Compose Actions Workflow
+name: Build and Push Docker Image to Docker Hub
 
 on:
   push:
