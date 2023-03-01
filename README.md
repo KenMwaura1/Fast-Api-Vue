@@ -152,9 +152,19 @@ It is also possible to use [Github Packages](https://docs.github.com/en/packages
 
 The docker image is also tagged with the commit sha and pushed to the docker hub repository. This is to enable the image to be pulled by the docker-compose file in the root directory. The docker-compose file is used to spin up the containers locally. It is available on [Github Packages](https://github.com/KenMwaura1/Fast-Api-Vue/pkgs/container/fast-api-vue/73433501?tag=main) as well.
 
+Example of successful workflow run on open pull request:
+![Successful workflow run on open pull request](https://raw.githubusercontent.com/KenMwaura1/Fast-Api-Vue/main/images/successful-workflow-run-on-open-pull-request.png)
+
+Example of successful workflow on pr merge:
+![Successful workflow run on merge pull request](https://raw.githubusercontent.com/KenMwaura1/Fast-Api-Vue/main/images/successful-workflow-run-on-merge-pull-request.png)
+
+
+
 ## Docker Hub
 
-The docker image is available on [Docker Hub](https://hub.docker.com/repository/docker/kenmwaura1/fast-api-example)
+Find the docker image on Docker Hub: [Fastapi-Vue](https://hub.docker.com/repository/docker/kenmwaura1/fast-api-vue/general)
+
+![Image pushed to Docker Hub](https://raw.githubusercontent.com/KenMwaura1/Fast-Api-Vue/main/images/image-pushed-to-docker-hub.png)
 
 ## License
 
