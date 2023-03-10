@@ -80,7 +80,7 @@ jobs:
 
       - name: Image digest
         id: docker_build
-        run: echo "::set-output name=digest::$(docker inspect --format='{{index .RepoDigests 0}}' ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.tags }})"
+        run: echo "::set-output name=digest::$(docker inspect --format='${{ steps.meta.outputs.tags }})"
 
 
       # Sign the resulting Docker image digest except on PRs.
@@ -99,5 +99,4 @@ jobs:
       - name: Sign the published Docker image
         id: image_sign
         if: github.event_name != 'pull_request'
-        run: cosign sign -key cosign.key ${{ steps.docker_build.outputs.digest }}
-        
+        run: cosign sign --key cosign.key ${{ steps.docker_build.outputs.digest }}
